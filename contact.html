@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+<meta charset="UTF-8"
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="style1.css">
+  <title>Travel-The-World</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script type="text/javascript" src="script1.js"></script>
+</head>
+<body>
+<div style="overflow:auto;">
+  <header class="header">
+  <h1 class="title">Travel The World</h1>
+  <h2 class="subtitle">Agentie de turism ce te trimite in jurul lumii!</h2>
+  </header>
+  <nav class="menu">
+     <a class="menu-item " href="Prima-pagina.html"><i class="material-icons">home</i> Prima Pagina</a>
+     <a class="menu-item" href="exotice.html"><i class="material-icons">filter_hdr</i> Exotice</a>
+     <a class="menu-item" href="hoteluri.htm"><i class="material-icons">hotel</i> Hoteluri</a>
+     <a class="menu-item menu-item-active" href="contact.html"><i class="material-icons">&#xe0d0;</i> Contact</a>
+     <input class="menu-item" type="text" placeholder="Search..">
+   </nav>
+<hr><hr>
+
+<h1 class="fancy" >Dragi turisti,</h1>
+<br><br>
+<p >Avem rugămintea să ne transmiteți solicitările Dvs. prin email la adresa rezervari@travel-the-world.ro sau direct pe adresa consultatului de turism responsabil de rezervarea Dumneavoastara.</p>
+<br><br>
+<p  >Agentii Travel The World sunt disponibili de luni pana vineri in intervalul 09.00 – 17.30 la numerele de telefon de mai jos:</p>
+<br><br>
+<p  > Ion Popescu: 0743338926</p>
+<br>
+<p  >Alin Dumitru: 0726381921</p>
+<br>
+<p  >Oana Ipascu: 0762282810</p>
+<br>
+<p  >Ion Turtumea: 0746668990</p>
+<br>
+<p  >Liliana Apostolescu: 0767789400</p>
+<br>
+<p  >Ileana Ologu: 0727657904</p>
+<br  >
+<p  >Cristian Stan: 0734567890</p>
+<br>
+<p>  Adriana Popescu: 0743478348</p>
+<br>
+<p  >Alexandru Andrei: 0762289927</p>
+<br>
+<p  >Elena Radu: 0723473589</p>
+<br>
+<p  >Liviu Padure: 0767907200</p>
+<br>
+<p  >Andrei Ulmeanu: 0778237027</p>
+<br>
+<p  >Paul Traian Stroe: 0789135120</p>
+<br><br>
+<p  >Toate solicitările vor fi tratate cu maximă seriozitate, prioritate având însă solicitările legate de rezervările care au o dată de plecare mai apropiată.</p>
+<br><br>
+<p  class="anim">Va mulumim pentru intelegere,</p>
+<br>
+<p  class="anim">Echipa Travel The World</p>
+<br>
+<br>
+
+<p id="demo"></p>
+<p class="wowow">1</p>
+<p class="wowow">2</p>
+
+<button type="button" onclick="DetaliiLocatii()">Locatiile cele mai vizitate</button>
+<br>
+<ul>
+        
+        <li>Loc: <input type="text" id="adjective" /></li>
+        <li>Adjectiv: <input type="text" id="person" /></li>
+	<li>Din ce motiv: <input type="text" id="places" /></li>
+        </ul>
+
+        <button id="story-button">Creaza povestea!</button>
+
+        <div id="story"></div>
+        <br>
+       <button type="button" onclick="getLocatie()" >Get locatie</button>
+<hr><hr>
+<div class="container3">
+<div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+  <div class="row3">
+    <div class="column3">
+      <img src="Sediu.jpg" style="width:100%">
+    </div>
+    <div class="column3">
+      <form action="/action_page.php">
+        <label for="fname">Nume</label>
+        <input type="text" id="fname" name="Nume" onkeyup="myFunction()" placeholder="Numele tau..">
+	<br><br>
+        <label for="lname">Prenume</label>
+        <input type="text" id="lname" name="Prenume" onkeyup="myFunction1()"placeholder="Prenumele tau..">
+	<br><br>
+        <label for="oras">Oras</label>
+        <select id="oras" name="Oras">
+          <option value="Bucuresti">Bucuresti</option>
+          <option value="Baia Mare">Baia Mare</option>
+          <option value="Ploiesti">Ploiesti</option>
+          <option value="Craiova">Craiova</option>
+          <option value="Pitesti">Pitesti</option>
+          <option value="Timisoara">Timisoara</option>
+	  <option value="Arad">Arad</option>
+          <option value="Constanta">Constanta</option>
+          <option value="Alba Iulia">Alba Iulia</option>
+          <option value="Brasov">Brasov</option>
+          <option value="Sibiu">Sibiu</option>
+          <option value="Altul">Altul</option>
+        </select>
+	<br><br>
+        <label for="subject">Subiect</label>
+        <textarea id="subject" name="subiect" placeholder="Scrie.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+<footer class="footer">
+<div class="row">
+  <div class="column left">
+   <h2 class:"footer">Despre noi</h2>
+   <hr class:"footer">
+   <p class:"footer">Intrebari frecvente</p>
+   <p class:"footer">Termeni si conditii generale</p>
+   <p class:"footer">Politica de confidentialitate</p>
+   <p class:"footer">Trimite-ne un mesaj</p>
+   <p class:"footer">Modalitati de plata</p>
+ </div>
+  <div class="column right">
+   <h2 class:"footer>Oferte de sezon</h2>
+   <hr class="footer">
+    <p class:"footer">Oferte Bulgaria</p>
+    <p class:"footer">Oferte Grecia</p>
+    <p class:"footer">Oferte Spania</p>
+    <p class:"footer">Oferte Italia</p>
+  </div>
+</div>
+</footer>
+</body>

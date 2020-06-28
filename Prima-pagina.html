@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+<meta charset="UTF-8"
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Travel-The-World</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js" type="text/javascript"></script> 
+   <script src="script.js"></script>
+   <script src="script1.js"></script>
+<style>
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: white;
+}
+</style>
+
+</head>
+<body onload="startGame()">
+<br>
+<button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.08)">Ridica</button>
+
+<div style="overflow:auto;">
+  <header class="header">
+  <h1 class="title">Travel The World</h1>
+  <h2 class="subtitle">Agentie de turism ce te trimite in jurul lumii!</h2>
+  </header>
+  <nav class="menu">
+     <a class="menu-item menu-item-active" href="Prima-pagina.html"><i class="material-icons">home</i> Prima Pagina</a>
+     <a class="menu-item" href="exotice.html"><i class="material-icons">filter_hdr</i> Exotice</a>
+     <a class="menu-item" href="hoteluri.htm"><i class="material-icons">hotel</i> Hoteluri</a>
+     <a class="menu-item" href="contact.html"><i class="material-icons">&#xe0d0;</i> Contact</a>
+     <input class="menu-item" type="text" placeholder="Search..">
+   </nav>
+   <p>Travel the world este o agentie de turism cu o vechime de 7 ani.In toata aceasta perioada ne-am impus pe piata turismului din Romania
+oferind clientilor nostrii vacante de neuitat si experiente unice.</p>
+   <hr>
+   <div>
+         <h3 class="home-subtitle"><Destinatii></h3>
+   </div>
+   <p>Destinatiile de vacanta pe care le poti alege prin intermediul agentiei noastre sunt cat se poate de diversificate!
+   <br>
+   Poti alege dintre a merge intr-o vacanta in Europa, Asia sau chiar America!
+   </p>
+   <hr>
+   <div>
+      <h3 class="home-subtitle">O serie de exemple ale destinatiilor pe care le puteti alege:</h3>
+   </div>
+</div>
+
+
+
+  <div class="content">
+ 
+	
+
+    <section class="features">
+    <figure>
+     <img  src="Alpi.jpg" alt="123" style="max-width:100%;">
+     <div class="centered">Pret:500-1500&euro;</div>
+      <button id="button" onclick="Disp()">Vacanta in Alpi</button>
+      <figcaption id="1" style="display:none">Disponibil </figcaption>
+     </figure>
+    <figure>
+     <img src="Canare.jpg" alt="123" style="max-width:100%;" >
+     <div class="centered">Pret:799-2500&euro;</div>
+      <button id="button1" onclick="Disp1()">Vacanta pe insulele Canare</button>
+	<figcaption id="2" style="display:none">Disponibil </figcaption>
+     </figure>
+    <figure>
+     <img src="Grecia.jpg" alt="123" style="max-width:100%;">
+    <div class="centered">Pret:450-1699&euro;</div>
+      <button id="button2" onclick="Disp2()">Vacanta in Grecia</button>
+	<figcaption id="3" style="display:none">Disponibil </figcaption>
+     </figure>
+  </section>
+
+  <section class="features">
+    <figure>
+     <img src="Costa-Blanca.jpg" alt="123" style="max-width:100%;">
+     <div class="centered">Pret:630-1799&euro;</div>
+      <button id="button3" onclick="Disp3()">Vacanta in Costa Blanca</button>
+	<figcaption id="4" style="display:none">Indisponibil </figcaption>
+     </figure>
+    <figure>
+     <img src="Creta.jpg" alt="123" style="max-width:100%;">
+     <div class="centered">Pret:499-1699&euro;</div>
+      <button id="button4" onclick="Disp4()">Vacanta pe insula Creta</button>
+	<figcaption id="5" style="display:none">Indisponibil </figcaption>
+     </figure>
+    <figure>
+     <img src="Egipt.jpg" alt="123" style="max-width:100%;">
+     <div class="centered">Pret:899-2599&euro;</div>
+      <button id="button5" onclick="Disp5()">Vacanta in Egipt</button>
+	<figcaption id="6" style="display:none">Disponibil </figcaption>
+     </figure>
+  </section>
+
+  <section class="features">
+    <figure>
+     <img src="Iordania.jpg" alt="123" style="max-width:100%;">
+     <div class="centered">Pret:799-1299&euro;</div>
+      <button id="button6" onclick="Disp6()">Vacanta in Iordania</button>
+	<figcaption id="7" style="display:none">Indisponibil </figcaption>
+     </figure>
+    <figure>
+     <img src="Israel.jpg" alt="123" style="max-width:100%;">
+     <div class="centered">Pret:999-1999&euro;</div>
+      <button id="button7" onclick="Disp7()">Vacanta In Israel</button>
+	<figcaption id="8" style="display:none">Disponibil </figcaption>
+     </figure>
+    <figure>
+     <img src="Kos.jpg" alt="123" style="max-width:100%;">
+     <div class="centered">Pret:550-1750&euro;</div>
+      <button id="button8" onclick="Disp8()">Vacanta pe insula Kos</button>
+	<figcaption id="9" style="display:none">Disponibil </figcaption>
+     </figure>
+  </section>
+
+  <section class="features">
+    <figure>
+     <img src="Maldive.jpg" alt="123" style="max-width:100%;">
+     <div class="centered">Pret:650-1689&euro;</div>
+      <button id="button9" onclick="Disp9()">Vacanta in Maldive</button>
+	<figcaption id="10" style="display:none">Indisponibil </figcaption>
+     </figure>
+    <figure>
+     <img src="Zakynthos.jpg" alt="123" style="max-width:100%;">
+      <div class="centered">Pret:499-1599&euro;</div>
+      <button id="button10" onclick="Disp10()">Vacanta pe insula Zakynthos</button>
+	<figcaption id="11" style="display:none">Indisponibil </figcaption>
+     </figure>
+    <figure>
+     <img src="Romania.jpg" alt="123" style="max-width:100%;">
+      <div class="centered">Pret:399-999&euro;</div>
+      <button id="button11" onclick="Disp11()">Vacanta in Romania</button>
+	<figcaption id="12" style="display:none">Disponibil </figcaption>
+     </figure>
+  
+<section class="features">
+    <figure>
+     <img src="Costa-Brava.jpg" alt="123" style="max-width:100%;">
+      <div class="centered">Pret:610-1699&euro;</div>
+      <button id="button12">Vacanta in Costa Brava</button>
+	<figcaption id="13" style="display:none">Disponibil </figcaption>
+     </figure>
+    <figure>
+     <img src="Sicilia.jpg" alt="123" style="max-width:100%;">
+      <div class="centered">Pret:599-1799&euro;</div>
+      <button id="button13">Vacanta in Sicilia</button>
+	<figcaption id="14" style="display:none">Indisponibil </figcaption>
+     </figure>
+    <figure>
+     <img src="Turcia.jpg" alt="123" style="max-width:100%;">
+      <div class="centered">Pret:899-1959&euro;</div>
+      <button id="button14">Vacanta in Turcia</button>
+	<figcaption id="15" style="display:none">Disponibil </figcaption>
+     </figure>
+    </section>
+<br>
+<button onclick="getElementById('demo1').innerHTML=Date()">Data exacta!</button>
+<p id="demo1"></p>
+  
+<br><br>
+</div>
+</div>
+</div>
+
+        
+
+<footer class="footer">
+<div class="row">
+  <div class="column left">
+   <h2 class:"footer">Despre noi</h2>
+   <hr class:"footer">
+   <p class:"footer">Intrebari frecvente</p>
+   <p class:"footer">Termeni si conditii generale</p>
+   <p class:"footer">Politica de confidentialitate</p>
+   <p class:"footer">Trimite-ne un mesaj</p>
+   <p class:"footer">Modalitati de plata</p>
+ </div>
+  <div class="column right">
+   <h2 class:"footer>Oferte de sezon</h2>
+   <hr class="footer">
+    <p class:"footer">Oferte Bulgaria</p>
+    <p class:"footer">Oferte Grecia</p>
+    <p class:"footer">Oferte Spania</p>
+    <p class:"footer">Oferte Italia</p>
+  </div>
+</div>
+</footer>
+
+</body>
+</html>
+
+    
+
+
+
+  
+   
+  
+  
+
+   

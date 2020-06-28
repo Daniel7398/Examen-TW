@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+<meta charset="UTF-8"
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Travel-The-World</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript">
+     $(document).ready(function(){
+      $('.hide_show').click(function(){
+   
+       if($(this).val()== 'Ascunde imaginile') {
+           $("img").hide(1000);
+           $(this).val('Arata imaginile');
+            
+            } else {
+              $("img").show(1000);
+              $(this).val('Ascunde imaginile');
+
+            }
+       });
+
+     });
+  </script>
+<script type="text/javascript">
+var Data = new Date("Jul 5, 2020 23:59:59").getTime();
+
+var x = setInterval(function() {
+
+  var DataActuala = new Date().getTime();
+    
+  var distance = Data - DataActuala;
+    
+
+
+  var minute = Math.floor(distance / 60000);
+  var secunde = Math.floor(distance / 1000);
+  var ore = Math.floor(distance / 3600000);
+    
+  
+  document.getElementById("alfb").innerHTML = "Au mai ramas " + ore + "h/"
+  + minute + "m/" + secunde + "s " + "pana in momentul in care ofertele noastre expira!";
+    
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("alfb").innerHTML = "Ofertele noastre au expirat";
+  }
+}, 1000);
+</script>
+
+
+<script>
+function myFunction() {
+var x = setInterval(function() {
+  var str = document.getElementById("ad").value;
+  var res = str.split("#");
+  var fgh = new Date(res);
+  var amplm = new Date().getTime();
+  var distance = amplm - fgh;
+  
+  var years = Math.floor((distance / (1000 * 60 * 60 * 24)) / 365);
+  var months = Math.floor(((distance / (1000 * 60 * 60 * 24))%365)/31);
+  var days = Math.floor(((distance / (1000 * 60 * 60 * 24)) % 365)%31);
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+   document.getElementById("pass").innerHTML = years + "y " + months + "mon " + days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+   if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("pass").innerHTML = "Invalid";
+  }
+ }, 1000);
+}
+  
+</script>
+
+
+<script src=script4.js></script>
+</head>
+<body>
+<div style="overflow:auto;">
+  <header class="header">
+  <h1 class="title" id="title23"></h1>
+  <h2 class="subtitle">Agentie de turism ce te trimite in jurul lumii!</h2>
+  </header>
+  <nav class="menu">
+     <a class="menu-item" href="Prima-pagina.html"><i class="material-icons">home</i> Prima Pagina</a>
+     <a class="menu-item" href="exotice.html"><i class="material-icons">filter_hdr</i> Exotice</a>
+     <a class="menu-item menu-item-active" href="hoteluri.htm"><i class="material-icons">hotel</i> Hoteluri</a>
+     <a class="menu-item" href="contact.html"><i class="material-icons">&#xe0d0;</i> Contact</a>
+     <input class="menu-item" type="text" placeholder="Search..">
+   </nav>
+
+<div ><h3></h3></div>
+<div ><p></p></div>
+<input id="ad"></input>
+<button onclick="myFunction()">Try it</button>
+<p id="pass"></p>
+<div class="ravase">
+  <span class="quote"></span>
+  </div>
+<div class="content1">
+  
+  <section class="hotel">
+   <div class="asd">
+     <br>
+     <i class="material-icons">location_on</i>   Costa Blanca, Spania
+     <br><br>
+     <i class="material-icons">attach_money</i>  Pretul porneste de la 150 &euro; pe noapte
+     <br><br>
+     <i class="material-icons">directions_car</i>   Transport undefined
+     <br><br>
+     <i class="material-icons">event</i>   5 nopti cazare
+     <br><br>
+     <i class="material-icons">restaurant</i>  All Inclusiv
+     <br><br>
+     <i class="material-icons">hotel</i>   Standard room
+     </div>
+     <figure>
+      <img style= "visibility:visible;" class="imagine" src="Hotel1.jpg" alt="123" style="max-width:100%;">
+      <figcaption>Hotel Rojales </figcaption>
+     </figure>
+   
+    </section>
+     </div>
+<br>
+ <hr>
+<br>
+  <div class="content1">
+   <section class="hotel">
+    <div class="asd">
+     <br>
+     <i class="material-icons">location_on</i>   Insulele Canare
+     <br><br>
+     <i class="material-icons">attach_money</i>  Pretul porneste de la 230 &euro; pe noapte
+     <br><br>
+     <i class="material-icons">directions_car</i>   Transport undefined
+     <br><br>
+     <i class="material-icons">event</i>   7 nopti cazare
+     <br><br>
+     <i class="material-icons">restaurant</i>  All Inclusiv
+     <br><br>
+     <i class="material-icons">hotel</i>   Premium room
+     </div>
+     <figure>
+      <img style= "visibility:visible;" class="imagine" src="Hotel2.jpg" alt="123" style="max-width:100%;">
+      <figcaption>Hotel Continental </figcaption>
+     </figure>
+   
+    </section>
+     </div>
+<br>
+ <hr>
+<br>
+  <div class="content1">
+   <section class="hotel">
+    <div class="asd">
+     <br>
+     <i class="material-icons">location_on</i>   Insula Creta, Grecia
+     <br><br>
+     <i class="material-icons">attach_money</i>  Pretul porneste de la 120 &euro; pe noapte
+     <br><br>
+     <i class="material-icons">directions_car</i>   Transport undefined
+     <br><br>
+     <i class="material-icons">event</i>   4 nopti cazare
+     <br><br>
+     <i class="material-icons">restaurant</i>  Micul dejun inclus in pret
+     <br><br>
+     <i class="material-icons">hotel</i>   Standard room
+     </div>
+     <figure>
+      <img style= "visibility:visible;" class="imagine" src="Hotel3.jpg" alt="123" style="max-width:100%;">
+      <figcaption>Hotel Agrabella Hersonissos </figcaption>
+     </figure>
+   
+    </section>
+     </div>
+<br>
+ <hr>
+<br>
+<div class="content1">
+   <section class="hotel">
+    <div class="asd">
+     <br>
+     <i class="material-icons">location_on</i>   Insula Kos, Grecia
+     <br><br>
+     <i class="material-icons">attach_money</i>  Pretul porneste de la 125 &euro; pe noapte
+     <br><br>
+     <i class="material-icons">directions_car</i>   Transport cu avionul
+     <br><br>
+     <i class="material-icons">event</i>   6 nopti cazare
+     <br><br>
+     <i class="material-icons">restaurant</i>  All Inclusiv
+     <br><br>
+     <i class="material-icons">hotel</i>   Premium room
+     </div>
+     <figure>
+      <img style= "visibility:visible;" class="imagine" src="Hotel4.jpg" alt="123" style="max-width:100%;">
+      <figcaption>Hotel Blue Lagoon </figcaption>
+     </figure>
+   
+    </section>
+     </div>
+<br>
+ <hr>
+<br>
+<div class="content1">
+   <section class="hotel">
+    <div class="asd">
+     <br>
+     <i class="material-icons">location_on</i>   Insulele Maldive
+     <br><br>
+     <i class="material-icons">attach_money</i>  Pretul porneste de la 175 &euro; pe noapte
+     <br><br>
+     <i class="material-icons">directions_car</i>   Transport undefined
+     <br><br>
+     <i class="material-icons">event</i>   4 nopti cazare
+     <br><br>
+     <i class="material-icons">restaurant</i>  2 mese pe zi
+     <br><br>
+     <i class="material-icons">hotel</i>   Standard room
+     </div>
+     <figure>
+      <img style= "visibility:visible;" class="imagine" src="Hotel5.jpg" alt="123" style="max-width:100%;">
+      <figcaption>Hotel Arena Beach </figcaption>
+     </figure>
+   
+    </section>
+     </div>
+<br>
+ <hr>
+<br>
+ <div class="content1">
+   <section class="hotel">
+    <div class="asd">
+     <br>
+     <i class="material-icons">location_on</i>   Insula Zakynthos, Grecia
+     <br><br>
+     <i class="material-icons">attach_money</i>  Pretul porneste de la 145 &euro; pe noapte
+     <br><br>
+     <i class="material-icons">directions_car</i>   Transport undefined
+     <br><br>
+     <i class="material-icons">event</i>   8 nopti cazare
+     <br><br>
+     <i class="material-icons">restaurant</i>  All Inclusiv
+     <br><br>
+     <i class="material-icons">hotel</i>   Premium room
+     </div>
+     <figure>
+      <img style= "visibility:visible;" class="imagine" src="Hotel7.jpg" alt="123" style="max-width:100%;">
+      <figcaption>Hotel Laganas </figcaption>
+     </figure>
+   
+    </section>
+     </div>
+<br>
+ <hr>
+<br>
+ <div class="content1">
+   <section class="hotel">
+    <div class="asd">
+     <br>
+     <i class="material-icons">location_on</i>   Costa Brava, Spania
+     <br><br>
+     <i class="material-icons">attach_money</i>  Pretul porneste de la 155 &euro; pe noapte
+     <br><br>
+     <i class="material-icons">directions_car</i>   Transport cu avionul
+     <br><br>
+     <i class="material-icons">event</i>   4 nopti cazare
+     <br><br>
+     <i class="material-icons">restaurant</i>  All Inclusiv
+     <br><br>
+     <i class="material-icons">hotel</i>   Standard room
+     </div>
+     <figure>
+      <img style= "visibility:visible;" class="imagine" src="Hotel8.jpg" alt="123" style="max-width:100%;">
+      <figcaption>Hotel Reymar Playa </figcaption>
+     </figure>
+   
+    </section>
+     </div>
+
+<br>
+ <hr>
+<br>
+ <div class="content1">
+   <section class="hotel">
+    <div class="asd">
+     <br>
+     <i class="material-icons">location_on</i>   Sicilia, Italia
+     <br><br>
+     <i class="material-icons">attach_money</i>  Pretul porneste de la 195 &euro; pe noapte
+     <br><br>
+     <i class="material-icons">directions_car</i>   Transport cu avionul
+     <br><br>
+     <i class="material-icons">event</i>   6 nopti cazare
+     <br><br>
+     <i class="material-icons">restaurant</i>  All Inclusiv
+     <br><br>
+     <i class="material-icons">hotel</i>   Premium room
+     </div>
+     <figure>
+      <img style= "visibility:visible;" class="imagine" src="Hotel9.jpg" alt="123" style="max-width:100%;">
+      <figcaption>Hotel RG Naxos </figcaption>
+     </figure>
+   
+    </section>
+     </div>
+<p id="alfb"></p>
+<input type="button" value="Ascunde imaginile" class="hide_show" />
+<br>
+Seconds spent on page:&nbsp; <input id="seconds-spent" size="6" readonly="" /><br />
+
+
+
+<br>
+ <hr>
+</div>
+</div>
+ </div>
+<footer class="footer">
+<div class="row">
+  <div class="column left">
+   <h2 class:"footer">Despre noi</h2>
+   <hr class:"footer">
+   <p class:"footer">Intrebari frecvente</p>
+   <p class:"footer">Termeni si conditii generale</p>
+   <p class:"footer">Politica de confidentialitate</p>
+   <p class:"footer">Trimite-ne un mesaj</p>
+   <p class:"footer">Modalitati de plata</p>
+ </div>
+  <div class="column right">
+   <h2 class:"footer>Oferte de sezon</h2>
+   <hr class="footer">
+    <p class:"footer">Oferte Bulgaria</p>
+    <p class:"footer">Oferte Grecia</p>
+    <p class:"footer">Oferte Spania</p>
+    <p class:"footer">Oferte Italia</p>
+  </div>
+</div>
+</footer>
+</body>
